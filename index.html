@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Baptism Program</title>
+    <link rel="manifest" href="manifest.json" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto my-5 px-4">
+      <h1 class="text-center text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+        Baptism Program
+      </h1>
+
+      <!-- Program Sections -->
+      <div class="program-section mb-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-2">Prelude Musics:</h2>
+        <p class="text-base sm:text-lg">
+          <a
+            href="#"
+            class="hymn-link text-blue-600 hover:underline"
+            data-hymn="315"
+            >#315 Jesus, the Very Thought of Thee</a
+          >
+          /
+          <a
+            href="#"
+            class="hymn-link text-blue-600 hover:underline"
+            data-hymn="100"
+            >#100 Nearer, My God, to Thee</a
+          >
+        </p>
+      </div>
+
+      <div class="program-section mb-6">
+        <p class="text-base sm:text-lg">
+          <strong>Conducting:</strong> Bro Arjay / Chester
+        </p>
+      </div>
+
+      <div class="program-section mb-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-2">Opening Hymn:</h2>
+        <p class="text-base sm:text-lg">
+          <a
+            href="#"
+            class="hymn-link text-blue-600 hover:underline"
+            data-hymn="304"
+            >#304 Teach Me to Walk in the Light</a
+          >
+        </p>
+      </div>
+
+      <div class="program-section mb-6">
+        <p class="text-base sm:text-lg">
+          <strong>Opening Prayer:</strong> By Invitation
+        </p>
+      </div>
+
+      <div class="program-section mb-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-2">Messages:</h2>
+        <p class="text-base sm:text-lg">Sis. Escandor</p>
+      </div>
+
+      <div class="program-section mb-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-2">
+          BAPTISMAL ORDINANCE
+        </h2>
+      </div>
+
+      <div class="program-section mb-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-2">
+          INTERLUDE / SINGING OF HYMNS:
+        </h2>
+        <p class="text-base sm:text-lg">
+          <a
+            href="#"
+            class="hymn-link text-blue-600 hover:underline"
+            data-hymn="302"
+            >#302 I Know My Father Lives</a
+          ><br />
+          <a
+            href="#"
+            class="hymn-link text-blue-600 hover:underline"
+            data-hymn="286"
+            >#286 Oh, What Songs of the Heart</a
+          >
+        </p>
+      </div>
+
+      <div class="program-section mb-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-2">Testimony:</h2>
+        <p class="text-base sm:text-lg">Sister Maria Katrina Rillera</p>
+      </div>
+
+      <div class="program-section mb-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-2">Remarks:</h2>
+        <p class="text-base sm:text-lg">Bro. Generalito Soriano</p>
+      </div>
+
+      <div class="program-section mb-6">
+        <h2 class="text-xl sm:text-2xl font-semibold mb-2">Closing Hymn:</h2>
+        <p class="text-base sm:text-lg">
+          <a
+            href="#"
+            class="hymn-link text-blue-600 hover:underline"
+            data-hymn="301"
+            >#301 I Am a Child of God</a
+          >
+        </p>
+      </div>
+
+      <div class="program-section mb-6">
+        <p class="text-base sm:text-lg">
+          <strong>Closing Prayer:</strong> By Invitation
+        </p>
+      </div>
+    </div>
+
+    <!-- Modal Structure -->
+    <div
+      id="hymn-modal"
+      class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
+      aria-modal="true"
+      role="dialog"
+      aria-labelledby="hymn-title"
+    >
+      <div
+        class="bg-white rounded-lg overflow-hidden shadow-xl w-full max-w-lg h-auto sm:h-auto relative"
+      >
+        <button
+          type="button"
+          id="close-button"
+          class="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl font-bold"
+          aria-label="Close modal"
+        >
+          &times;
+        </button>
+        <div class="px-6 py-4 border-b">
+          <h5 id="hymn-title" class="text-xl font-semibold"></h5>
+        </div>
+        <div
+          class="p-6 overflow-y-auto max-h-screen"
+          id="hymn-lyrics"
+          tabindex="-1"
+        >
+          <!-- Hymn lyrics will be loaded here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="app.js"></script>
+  </body>
+</html>

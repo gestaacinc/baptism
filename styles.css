@@ -1,0 +1,118 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.container {
+  padding: 20px;
+}
+/* Custom Styles */
+.program-section {
+  margin-bottom: 20px;
+}
+
+.hymn-link {
+  font-weight: bold;
+}
+
+.modal-body {
+  white-space: pre-wrap;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+p {
+  color: #555;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Modal Styles */
+.modal {
+  display: block; /* Ensure the modal is displayed properly */
+  position: fixed;
+  z-index: 1050; /* Ensure it is above everything else */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); /* Correct overlay background */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 4px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  z-index: 1060; /* Higher than the modal itself */
+}
+
+.close-button {
+  color: #aaa;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 1061; /* Make sure it is above everything */
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: #000;
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  z-index: 1040; /* Ensure backdrop is beneath the modal */
+}
+
+@media (max-width: 600px) {
+  .modal-content {
+    margin-top: 30%;
+  }
+}
+
+/* Optional: Additional styles if needed */
+.program-section p {
+  margin-top: 0.5rem;
+}
+
+#hymn-modal {
+  z-index: 50; /* Ensure the modal appears above other elements */
+}
+
+#close-button {
+  cursor: pointer;
+}
+
+/* Full-screen modal on small screens */
+@media (max-width: 640px) {
+  #hymn-modal .bg-white {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  #close-button {
+    top: 1rem;
+    right: 1rem;
+  }
+}
