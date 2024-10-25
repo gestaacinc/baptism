@@ -98,9 +98,23 @@ a:hover {
 #hymn-modal {
   z-index: 50; /* Ensure the modal appears above other elements */
 }
+/* Adjust the modal content styling */
+#hymn-modal .modal-content {
+  width: 90%;
+  max-width: 600px;
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
 
+/* Center the close button */
 #close-button {
   cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 51; /* Ensure it's above the modal content */
 }
 
 /* Full-screen modal on small screens */
